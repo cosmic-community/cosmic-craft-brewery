@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-stone-50 text-stone-900;
+  }
+}
+
+@layer utilities {
+  .prose-content {
+    @apply prose prose-stone max-w-none;
+  }
+  
+  .prose-content h2 {
+    @apply text-2xl font-bold text-stone-900 mt-8 mb-4;
+  }
+  
+  .prose-content h3 {
+    @apply text-xl font-bold text-stone-800 mt-6 mb-3;
+  }
+  
+  .prose-content p {
+    @apply text-stone-700 leading-relaxed mb-4;
+  }
+  
+  .prose-content ul {
+    @apply list-disc list-inside space-y-2 text-stone-700 mb-4;
+  }
+  
+  .prose-content strong {
+    @apply font-semibold text-stone-900;
+  }
+}
